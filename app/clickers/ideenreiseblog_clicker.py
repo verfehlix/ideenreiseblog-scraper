@@ -19,7 +19,7 @@ from google_drive_downloader import GoogleDriveDownloader as gdd
 
 init(autoreset=False)
 
-# function to enable downloading of files
+
 def enable_download_headless(browser, download_dir):
     browser.command_executor._commands["send_command"] = (
         "POST",
@@ -32,7 +32,6 @@ def enable_download_headless(browser, download_dir):
     browser.execute("send_command", params)
 
 
-# function to initialize chrome webdriver
 def init_chrome_webdriver():
     opts = Options()
     opts.add_argument("--headless")
@@ -292,7 +291,7 @@ def handle_file_list(file_list_path, download_dir, finished_dir):
     # handle_single_list_entry(first, download_dir, finished_dir)
 
 
-file_list_path = "test.json"
+file_list_path = "mathe.json"
 
 download_dir = "./download/"
 finished_dir = "./finished/"

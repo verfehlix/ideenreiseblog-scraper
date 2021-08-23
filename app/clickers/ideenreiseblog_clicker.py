@@ -291,7 +291,7 @@ def handle_file_list(file_list_path, download_dir, finished_dir):
     # handle_single_list_entry(first, download_dir, finished_dir)
 
 
-file_list_path = "mathe.json"
+file_list_path = "file_lists/mathe.json"
 
 download_dir = "./download/"
 finished_dir = "./finished/"

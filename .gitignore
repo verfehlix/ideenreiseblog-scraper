@@ -148,3 +148,7 @@ session-*
 # serverless
 .serverless
 node_modules
+
+# downloads
+download
+finished
